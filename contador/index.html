@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles.css" />
+  <title>Contador</title>
+</head>
+
+<body>
+  <div class="nuvem" id="nuvem1">
+    <div class="gomos"></div>
+    <div class="gomos"></div>
+    <div class="gomos"></div>
+    <div class="gomos"></div>
+  </div>
+  <h1>CONTADOR</h1>
+  <p>Clique nos botões para alterar o valor</p>
+  <div class="nuvem" id="nuvem2">
+    <div class="gomos"></div>
+    <div class="gomos"></div>
+    <div class="gomos"></div>
+    <div class="gomos"></div>
+    <div class="gomos"></div>
+  </div>
+  <div id="counter">
+    <button class="operacao" onclick="decrement()">-</button>
+    <span id="currentNumber">0</span>
+    <button class="operacao" onclick="increment()">+</button>
+  </div>
+  <div>
+    <button class="zerar" onclick="reset()">Zerar</button>
+  </div>
+  <div class="nuvem" id="nuvem3">
+    <div class="gomos"></div>
+    <div class="gomos"></div>
+    <div class="gomos"></div>
+  </div>
+  <footer>Feito por Cristiane Santos</footer>
+  <script src="assets/scripts.js"></script>
+</body>
+
+</html>
