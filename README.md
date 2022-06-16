@@ -10,8 +10,8 @@ Por enquanto ainda sou iniciante na área de desenvolvimento e estou construindo
 
 <hr>
 
-### 🌐 Acesso ao site do portfólio
-Aqui está o link para acessar o site: [cristiane-dsc.github.io](cristiane-dsc.github.io)</br>
+### 🌐 Acesso ao meu GitHub Pages
+Aqui está o link para acessar meu GitHub Pages (meu site de portfólio): [cristiane-dsc.github.io](https://cristiane-dsc.github.io/)</br>
 Abaixo você encontra um menu de navegação por todos os projetos publicados no site.</br>
 Fique à vontade para explorar!</br>
 
