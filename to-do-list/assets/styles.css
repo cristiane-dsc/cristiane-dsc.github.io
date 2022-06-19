@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Annie Use Your Telescope', cursive;
+}
+
+body,
+main {
+  width: 100%;
+}
+
+body {
+  background: #fff;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f8c52c;
+}
+
+.linha {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.coluna1,
+.coluna2 {
+  width: 50%;
+  height: auto;
+}
+
+h1,
+h2 {
+  height: 10vh;
+  width: 100%;
+  font-family: 'Fredericka the Great', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+h1 {
+  font-size: 30pt;
+}
+
+.instrucoes {
+  background: #f06436;
+  color: #fff;
+  align-items: center;
+  width: 100%;
+  text-align: justify;
+  font-size: 20pt;
+  padding: 2rem 4rem;
+}
+
+ul {
+  text-align: left;
+  margin: 1rem 1rem 1rem 2rem;
+}
+
+p {
+  font-weight: 600;
+  margin: 2rem 0 0;
+}
+
+#msgSecreta {
+  text-align: center;
+  margin: 2rem 2rem;
+  width: auto;
+  color: #000;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#msgSecreta:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.coluna2 {
+  background: #fddf84;
+}
+
+#criadorTarefas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+#entrada,
+button {
+  height: 6vh;
+  border: none;
+  font-size: 18pt;
+  margin: 0;
+}
+
+#entrada {
+  width: 60%;
+  padding: 5px 15px;
+  border-radius: 20px 0 0 0;
+}
+
+button {
+  width: 20%;
+  padding: 5px 10px;
+  border-radius: 0 0 20px 0;
+  cursor: pointer;
+  background: #f06436;
+  color: #fff;
+}
+
+button:hover {
+  font-weight: 600;
+  background: #dd2121;
+}
+
+button:active {
+  font-weight: 600;
+  background: #fff;
+  color: #dd2121;
+  border: 2px solid #dd2121;
+}
+
+#listaTarefas {
+  font-size: 18pt;
+  height: auto;
+  width: auto;
+  margin: 2rem 4rem;
+  padding: 1rem 3rem;
+  position: relative;
+}
+
+.tarefa {
+  height: 18px;
+  width: 18px;
+}
+
+label {
+  margin-left: 10px;
+  word-break: break-word;
+  white-space: wrap;
+}
+
+.tarefa:checked+label {
+  text-decoration: line-through;
+  color: gray;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #000;
+  font-size: 18pt;
+  font-weight: 600;
+  height: 4rem;
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width: 912px) {
+  .linha {
+    flex-direction: column;
+  }
+
+  .coluna1,
+  .coluna2 {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 24pt;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  .instrucoes {
+    font-size: 15pt;
+  }
+
+  #msgSecreta {
+    font-size: 14pt;
+    margin: 1rem;
+    opacity: 0;
+  }
+
+  #msgSecreta:focus {
+    opacity: 1;
+  }
+
+  h2 {
+    margin: 1rem 0;
+  }
+
+  #entrada,
+  button {
+    height: 5vh;
+    font-size: 16pt;
+  }
+
+  #entrada {
+    width: 70%;
+  }
+
+  button {
+    width: 25%;
+  }
+
+  #listaTarefas {
+    font-size: 16pt;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    position: relative;
+  }
+}

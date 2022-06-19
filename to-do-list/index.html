@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles.css"> <!-- Link para o estio em CSS -->
+  <title>Lista de Tarefas</title>
+</head>
+
+<body>
+  <main>
+
+    <div class="linha"> <!-- Para dividir a página no meio, crio uma linha com duas colunas -->
+
+      <div class="coluna1">
+        <h1>Lista de Tarefas &#128221</h1>
+        <div class="instrucoes">  <!-- Instruções sobre como usar a aplicação -->
+          <h3>INSTRUÇÕES</h3>
+          <ul>
+            <li>Escreva a tarefa no campo.</li>
+            <li>Pressione a tecla "Enter" ou clique/toque no botão "Adicionar".</li>
+            <li>Após completar uma tarefa, marque sua caixa de seleção correspondente.</li>
+          </ul>
+          <p>ATENÇÃO: Ao fechar ou atualizar a página, os dados serão perdidos. Portanto adicione apenas as tarefas que
+            você pretende realizar HOJE.</p>
+        </div>
+
+        <h2 id="msgSecreta" tabindex="1">Lembre-se que ter sucesso em uma meta simples é melhor do que falhar em uma meta impossível.
+        </h2> <!-- Uma mensagem secreta motivacional que aparece so ser clicada -->
+
+      </div>
+
+      <div class="coluna2">
+        <h2>Mãos à obra!</h2>
+        <div id="criadorTarefas">  <!-- Entrada para o usuário criar tarefas -->
+          <input id="entrada" type="text" placeholder="Digite aqui sua tarefa">
+          <button id="botao" type="button">Adicionar</button>
+        </div>
+
+        <div id="listaTarefas">  <!-- Lista de tarefas que sempre inicializa vazia -->
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <script src="assets/scripts.js"></script> <!-- Link para o código em JavaScript -->
+
+</body>
+
+<footer>Feito por Cristiane Santos</footer>  <!-- Rodapé -->
+
+</html>
