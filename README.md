@@ -17,7 +17,7 @@ Fique à vontade para explorar!</br>
 
 <details>
   <summary>Navegação (clique para expandir)</summary>
-  <a href="https://cristiane-dsc.github.io/contador/">Contador</a>
+  <a href="https://cristiane-dsc.github.io/contador/">Contador</a></br>
   <a href="https://cristiane-dsc.github.io/to-do-list/">Lista de Tarefas</a>
 </details>
 
