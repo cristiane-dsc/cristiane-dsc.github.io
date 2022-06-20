@@ -11,14 +11,15 @@ Por enquanto ainda sou iniciante na área de desenvolvimento e estou construindo
 <hr>
 
 ### 🌐 Acesso ao meu GitHub Pages
-Aqui está o link para acessar meu GitHub Pages (meu site de portfólio): [cristiane-dsc.github.io](https://cristiane-dsc.github.io/)</br>
 Abaixo você encontra um menu de navegação por todos os projetos publicados no site.</br>
 Fique à vontade para explorar!</br>
 
 <details>
   <summary>Navegação (clique para expandir)</summary>
   <a href="https://cristiane-dsc.github.io/contador/">Contador</a></br>
-  <a href="https://cristiane-dsc.github.io/to-do-list/">Lista de Tarefas</a>
+  <a href="https://cristiane-dsc.github.io/to-do-list/">Lista de Tarefas</a></br>
+  <a href="https://cristiane-dsc.github.io/menu-hamburguer-css-transitions/">Menu Hanburguer com CSS Transitions</a></br>
+  <a href="https://cristiane-dsc.github.io/single-page-sobre-mim/">Single Page Sobre Mim</a></br>
 </details>
 
 <hr>
