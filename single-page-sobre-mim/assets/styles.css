@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #fffcf6;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    background-color: #192e44;
+    margin-bottom: 50px;
+}
+
+#list {
+    color: #fffcf6;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 10px;
+}
+
+header ul li a{
+    color: #fffcf6;
+}
+
+header ul li a:hover {  /* muda a cor do texto e faz sombra embaixo quando passa o mouse */
+    padding: 2px;
+    color: #ff8f27;
+    box-shadow: 0 5px 3px -3px #fffcf6;
+    transition: 300ms;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url('./imagens/pexels-pixabay-459271.jpg') no-repeat center center fixed;
+    background-size:cover;
+}
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+   }
+
+.container {
+    text-align: center;
+    padding: 10px;
+}
+
+.name h1, h5 {
+    color: #fffcf6;
+    text-shadow: 2px 2px 1px #192e44;
+}
+
+.container .name h1 {
+    font-size: 70px;
+}
+
+.container .name h5 {
+    font-size: 28px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#animation {    /* Animação pra fazer a seta piscar */
+    transition: 500ms;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {  /* Para que a animação funcione, precisa chamar @keyframes */
+    to {
+        visibility: hidden;
+    }
+}
+
+.rotate {   /* Animação pra fazer a seta rotacionar ao clicar nela */
+    transform: rotate(-180deg);
+    transition: 300ms;
+}
+
+.active {   /* Animação pra fazer o texto de 'about' aparecer */
+    display: block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: large;
+    text-align: justify;
+    background-color: #fffcf6a8;
+    color: #192e44;
+}
+
+/* O código de animação a seguir foi obtido no site Animista: https://animista.net/play/entrances/fade-in/fade-in-top */
+/* Usado para aplicar fade in ao parágrafo 'about' ao clicar na seta */
+
+.fade-in-top {
+	-webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Fim do código gerado pelo site Animista */
+
+
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 480px) {
+
+    /* Importante lembrar de usar os mesmos seletores utilizados na cascata original */
+    /* Po exemplo, se usar apenas 'h1' abaixo, o tamanho da fonte não vai mudar como esperado */
+
+    .container .name h1 {
+        font-size: 35px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+}

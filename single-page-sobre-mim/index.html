@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- meta tags (SEO) -->
+    <meta http-equiv="content-type" charset="text/html; charset=UTF-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="author" content="Cris Costa">
+    <meta name="description" content="Cris Costa | Desenvolvedora Full Stack">
+    <meta name="keywords" content="desenvolvedor, web, front-end, back-end, full stack, cris costa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index">
+    <!-- links de famílias de fontes (retirados do google fonts) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- link do estilo da página (CSS), favicon e tag de título -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" type="imagem/png" href="assets/imagens/CrisDSC azul.png azul.png"/>
+    <title>Cris Costa | CrisDSC</title>
+</head>
+
+<body>
+    <!-- menu com logo da marca e links para contato -->
+    <header>
+        <div>
+            <img src="assets/imagens/CrisDSC azul.png" alt="logo Cris Costa" />
+        </div>
+        <ul id="list">
+            <li>
+                <!--  target=blank para abrir o link em uma nova aba -->
+                <a target=blank href="https://wa.me/+5511970415856">Whatsapp</a>
+            </li>
+            <li>
+                <a href="mailto:cristiane.dsc@yahoo.com">E-mail</a>
+            </li>
+            <li>
+                <a target=blank href="https://github.com/cristiane-dsc">Github</a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Nome, profissão e 'Sobre' -->
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Cris Costa</h1>
+                <h5>Aprendiz de Desenvolvimento Front-end</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Sou formada em Neurociência pela Universidade Federal do ABC e agora estou em transição de carreira
+                    para atuar na área de Desenvolvimento Full Stack. Veja meu portfólio no link do GitHub e fique à vontade 
+                    para me contatar por e-mail ou pelo Whatsapp. Este é apenas o começo da minha jornada como desenvolvedora, 
+                    e estou muito animada!
+                </p>
+            </div>
+        </section>
+    </main>
+
+<!-- javascrip para animação da seta e do parágrafo 'about' -->
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+            display.classList.toggle('fade-in-top');
+        }
+    </script>
+
+</body>
+
+</html>
