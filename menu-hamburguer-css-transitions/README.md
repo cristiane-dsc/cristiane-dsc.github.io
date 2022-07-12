@@ -1,10 +1,12 @@
 # Projeto Menu Hamburguer com CSS Transitions
 
-Nesta página você aprende um pouco mais sobre mim e meus planos para o futuro</br>
-Esta página foi produzida durante o bootcamp da TQI Fullstack na plataforma de DIO, em Junho de 2022.</br>
+Esta é uma página única onde você aprende um pouco mais sobre mim e meus planos para o futuro</br>
+O projeto foi produzido durante o bootcamp da TQI Fullstack na plataforma de DIO, em Junho de 2022.</br>
 
 ### 💡 Diferenças em relação ao projeto original:
 * Fiz um menu que permanece fixo ao rolar a página. Deste modo, o usuário pode acessá-lo sem a necessidade de voltar para o topo da página.
+* Configurei o menu para que se feche automaticamente quando o usuário clicar em um item da lista.
+* Ancorei as diferentes seções da página nos itens correspondentes do menu.
 * Ajustei o texto dos boxes para que fosse possível enxergar melhor as imagens de fundo deles.
 * Acrescentei meu próprio texto, alando um pouco sobre mim e meus objetivos profissionais.
 * Escolhi cores e fontes de minha preferência, para dar minha cara ao projeto.
