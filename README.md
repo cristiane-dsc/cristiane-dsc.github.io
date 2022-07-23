@@ -6,7 +6,7 @@
 <hr>
 
 ### 🚧 Em construção 🚧
-Por enquanto ainda sou iniciante na área de desenvolvimento e estou construindo meu portfólio pouco a pouco. Em breve vai ter muita coisa legal por aqui,então fique de olho!
+Por enquanto ainda sou iniciante na área de desenvolvimento e estou construindo meu portfólio pouco a pouco. Em breve vai ter muita coisa legal por aqui, então fique de olho!
 
 <hr>
 
@@ -20,6 +20,7 @@ Fique à vontade para explorar!</br>
   <a href="https://cristiane-dsc.github.io/to-do-list/">Lista de Tarefas</a></br>
   <a href="https://cristiane-dsc.github.io/menu-hamburguer-css-transitions/">Menu Hanburguer com CSS Transitions</a></br>
   <a href="https://cristiane-dsc.github.io/single-page-sobre-mim/">Single Page Sobre Mim</a></br>
+  <a href="https://cristiane-dsc.github.io/jogo-da-memoria-nebulosas-hubble/">Jogo da Memória Nebulosas do Hubble</a></br>
 </details>
 
 <hr>
