@@ -3,7 +3,7 @@ var listaTarefas = document.getElementById('listaTarefas');
 var botao = document.getElementById("botao");
 
 // Função que adiciona uma nova tarefa à lista
-function adicionaTarefa(e) {
+function adicionaTarefa() {
 
   let conteudo = document.createTextNode(entrada.value); // guarda conteúdo digitado pelo usuário
 

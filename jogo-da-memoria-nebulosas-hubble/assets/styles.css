@@ -15,8 +15,7 @@ body {
   width: 640px;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
-  /* quebra de linha pros cards */
+  flex-wrap: wrap;  /* quebra de linha pros cards */
   perspective: 1000px;
 }
 
