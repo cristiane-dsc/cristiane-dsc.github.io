@@ -8,29 +8,31 @@ function adicionaTarefa() {
   let conteudo = document.createTextNode(entrada.value); // guarda conteúdo digitado pelo usuário
 
   // cria novos elementos HTML
+  let linha = document.createElement('div');
+  let icone = document.createElement('div');
   let tarefa = document.createElement('input');
   let rotulo = document.createElement('label');
-  let span = document.createElement('span');
-
-  // conta o número de <input> dentro da div
-  quantidadeTarefas = document.querySelectorAll("#listaTarefas input").length;
 
   // define atributos dos novos elementos criados
+  linha.className = 'linha-tarefa';
+  icone.className = 'icone-apagar';
   tarefa.type = 'checkbox';
   tarefa.className = 'tarefa';
-  tarefa.id = 'tarefa' + (quantidadeTarefas + 1);
-  rotulo.for = tarefa.id;
 
   // inclui novos elementos criados dentro da div com id="listaTarefas"
-  listaTarefas.appendChild(span);
-  listaTarefas.appendChild(tarefa);
-  listaTarefas.appendChild(rotulo);
+  listaTarefas.appendChild(linha);
+  linha.appendChild(icone);
+  linha.appendChild(tarefa);
+  linha.appendChild(rotulo);
   rotulo.appendChild(conteudo);
-  rotulo.insertAdjacentHTML("afterend", '</br>');  // quebra a linha após acrescentar nova tarefa
 
   entrada.value = ''; // esvazia o campo de digitação
 
 }
+
+// Função que remove uma tarefa da lista
+// function removeTarefa() {
+// }
 
 entrada.addEventListener("keydown", function(e) {  // Detecção de eventos para tecla enter
 
