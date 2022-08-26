@@ -1,3 +1,4 @@
+// Variáveis globais
 var entrada = document.getElementById('entrada');
 var listaTarefas = document.getElementById('listaTarefas');
 var botao = document.getElementById("botao");
@@ -13,7 +14,7 @@ function adicionaTarefa() {
   let tarefa = document.createElement('input');
   let rotulo = document.createElement('label');
 
-  // define atributos dos novos elementos criados
+  // define classes e tipos dos novos elementos criados
   linha.className = 'linha-tarefa';
   icone.className = 'icone-apagar';
   tarefa.type = 'checkbox';
@@ -26,21 +27,32 @@ function adicionaTarefa() {
   linha.appendChild(rotulo);
   rotulo.appendChild(conteudo);
 
+  // conta o número de tarefas existentes (<input> dentro de listaTarefas)
+  quantidadeTarefas = document.querySelectorAll("#listaTarefas input").length;
+
+  // define id do ícone apagar com base na quantidade de tarefas que já existem
+  icone.id = 'icone-apagar-' + quantidadeTarefas
+
   entrada.value = ''; // esvazia o campo de digitação
 
+  // Função anônima que remove tarefa a partir de detecção de eventos para clique no "X"
+  icone.addEventListener("click", () => {
+    linha.remove();
+  });
 }
 
-// Função que remove uma tarefa da lista
-// function removeTarefa() {
-// }
+// Detecção de eventos que chamam adicionaTarefa() apenas se houver conteúdo na entrada
+entrada.addEventListener("keydown", function (e) {  // Enter
 
-entrada.addEventListener("keydown", function(e) {  // Detecção de eventos para tecla enter
+  let key = e.which || e.keyCode || 0;  // garante compatibilidade entre navegadores
 
-  let key = e.which || e.keyCode || 0;  // necessário para compatibilidade entre navegadores
-
-  if (key === 13) {
+  if (entrada.value && key === 13) {
     adicionaTarefa();
   }
 });
 
-botao.addEventListener("click", adicionaTarefa);  // Detecção de eventos para clique
+botao.addEventListener("click", () => {  // clique/toque
+  if (entrada.value) {
+    adicionaTarefa();
+  }
+});
