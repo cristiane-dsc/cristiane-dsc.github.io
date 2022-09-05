@@ -40,7 +40,7 @@ main {
 
 h1,
 h2 {
-  height: 10vh;
+  height: 6vh;
   width: 100%;
   font-family: 'Fredericka the Great', cursive;
   display: flex;
@@ -50,7 +50,7 @@ h2 {
 }
 
 #titulo-coluna-1 {
-  font-size: 30pt;
+  font-size: 24pt;
 }
 
 .instrucoes {
@@ -59,7 +59,7 @@ h2 {
   align-items: center;
   width: 100%;
   text-align: justify;
-  font-size: 20pt;
+  font-size: 16pt;
   padding: 2rem 4rem;
 }
 
@@ -81,7 +81,7 @@ p {
   opacity: 0;
   transition: 0.5s;
   font-family: 'Fredericka the Great', cursive;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 #msgSecreta:hover {
@@ -94,7 +94,7 @@ p {
 }
 
 #titulo-coluna-2 {
-  font-size: 20pt;
+  font-size: 16pt;
 }
 
 #criadorTarefas {
@@ -108,7 +108,7 @@ p {
 button {
   height: 7vh;
   border: none;
-  font-size: 18pt;
+  font-size: 16pt;
   margin: 0;
 }
 
@@ -140,13 +140,14 @@ button:active {
 }
 
 #listaTarefas {
-  height: auto;
+  height: 50vh;
   width: auto;
+  overflow-y: auto;
   margin: 2rem 4rem;
+  padding-top: 0.5rem;
   position: relative;
   display: flex;
-  align-items: left;
-  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -182,14 +183,14 @@ button:active {
 }
 
 .tarefa {
-  height: 18px;
-  width: 18px;
+  height: 16px;
+  width: 16px;
 }
 
 label {
   word-break: break-word;
-  font-size: 18pt;
-  line-height: 18pt;
+  font-size: 16pt;
+  line-height: 16pt;
   width: 100%;
 }
 
@@ -204,7 +205,7 @@ footer {
   align-items: center;
   background: #fff;
   color: #000;
-  font-size: 18pt;
+  font-size: 16pt;
   font-weight: 600;
   height: 4rem;
   width: 100%;
@@ -222,7 +223,7 @@ footer {
   }
 
   #titulo-coluna-1 {
-    font-size: 25pt;
+    font-size: 24pt;
     margin: 1rem auto;
     /* padding: 1rem; */
     text-align: center;
@@ -230,7 +231,7 @@ footer {
   }
 
   .instrucoes {
-    font-size: 15pt;
+    font-size: 14pt;
     padding: 1rem 2rem;
   }
 
@@ -255,7 +256,7 @@ footer {
   #entrada,
   button {
     height: 5%;
-    font-size: 16pt;
+    font-size: 14pt;
   }
 
   #entrada {
@@ -267,7 +268,7 @@ footer {
   }
 
   #listaTarefas {
-    font-size: 16pt;
+    font-size: 14pt;
     margin: 1rem 2rem;
     padding: 1rem;
     position: relative;
