@@ -1,7 +1,8 @@
 // Variáveis globais
 var entrada = document.getElementById('entrada');
 var listaTarefas = document.getElementById('listaTarefas');
-var botao = document.getElementById("botao");
+var adicionar = document.getElementById("adicionar");
+var limpar = document.getElementById("limpar")
 
 // Função que adiciona uma nova tarefa à lista
 function adicionaTarefa() {
@@ -43,7 +44,7 @@ function adicionaTarefa() {
   }
 }
 
-// Detecção de eventos que chamam adicionaTarefa() apenas se houver conteúdo na entrada
+// Detecção de eventos que chamam adicionaTarefa()
 
 entrada.addEventListener("keydown", function (e) {  // Enter
 
@@ -54,4 +55,9 @@ entrada.addEventListener("keydown", function (e) {  // Enter
   }
 });
 
-botao.addEventListener("click", adicionaTarefa);  // clique/toque
+adicionar.addEventListener("click", adicionaTarefa);  // clique/toque
+
+// Detecção de evento de clique que apaga o conteúdo da seção que contém as tarefas
+limpar.addEventListener("click", () => {
+  listaTarefas.innerHTML = '';
+});

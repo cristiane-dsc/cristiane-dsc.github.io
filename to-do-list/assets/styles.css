@@ -105,7 +105,8 @@ p {
 }
 
 #entrada,
-button {
+#adicionar,
+#limpar {
   height: 7vh;
   border: none;
   font-size: 16pt;
@@ -118,21 +119,33 @@ button {
   border-radius: 20px 0 0 0;
 }
 
-button {
+#adicionar,
+#limpar {
   width: 20%;
-  padding: 5px 10px;
-  border-radius: 0 0 20px 0;
+  padding: 5px 10px;  
   cursor: pointer;
   background: #f06436;
   color: #fff;
 }
 
-button:hover {
+#adicionar {
+  border-radius: 0 0 20px 0;
+}
+
+#limpar {
+  border-radius: 20px 0 20px 0;
+  display: block;
+  margin: 2rem auto 3rem auto;
+}
+
+#adicionar:hover,
+#limpar:hover {
   font-weight: 600;
   background: #dd2121;
 }
 
-button:active {
+#adicionar:active,
+#limpar:active {
   font-weight: 600;
   background: #fff;
   color: #dd2121;
@@ -224,8 +237,7 @@ footer {
 
   #titulo-coluna-1 {
     font-size: 24pt;
-    margin: 1rem auto;
-    /* padding: 1rem; */
+    margin: 2rem auto;
     text-align: center;
     width: 100%;
   }
@@ -254,7 +266,8 @@ footer {
   }
 
   #entrada,
-  button {
+  #adicionar,
+  #limpar {
     height: 5%;
     font-size: 14pt;
   }
@@ -263,11 +276,13 @@ footer {
     width: 70%;
   }
 
-  button {
+  #adicionar,
+  #limpar {
     width: 25%;
   }
 
   #listaTarefas {
+    height: 30vh;
     font-size: 14pt;
     margin: 1rem 2rem;
     padding: 1rem;
